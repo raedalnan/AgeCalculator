@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Off-white);
+    gap: 2rem;
+}
+.container{
+    background-color: var(--White);
+    margin-top: 20vh;
+    width: 45%;
+    height: 65vh;
+    border-radius: 2rem 2rem 10rem 2rem;
+}
+.grid{
+    padding: 2.5rem;
+    padding-right: 10rem;
+    display: grid;
+    column-gap: 2.2rem;
+    grid-template-columns: repeat(4fr);
+    grid-template-areas: 
+    "day month year blank"
+    "iday imonth iyear blank";
+    border-bottom: 2px solid var(--Off-white);
+    width: 85%;
+    padding-left: 0;
+    margin-left: 3rem;
+    position: relative;
+}
+.grid label{
+    color: var(--Smokey-grey);
+}
+.grid input{
+    padding: 1rem;
+    width: 8rem;
+    margin-top: 5px;
+    border: 2px solid var(--Light-grey);
+    border-radius: 5px;
+    color: var(--Off-black);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.day{
+    grid-area: day;
+}
+.iday{
+    grid-area: iday;
+}
+.month{
+    grid-area: month;
+}
+.imonth{
+    grid-area: imonth;
+}
+.year{
+    grid-area: year;
+}
+.iyear{
+    grid-area: iyear;
+}
+.arrow{
+    background-color: var(--Purple);
+    width: 4.6rem;
+    height: 4.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -2.3rem;
+    right: 0;
+}
+.arrow img{
+    display: block;
+}
+.resault{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2rem;
+    padding: 1.5rem;
+    padding-left: 3rem;
+}
+.resault span{
+    color: var(--Purple);
+}
