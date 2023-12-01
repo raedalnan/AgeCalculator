@@ -17,9 +17,12 @@
   <div class="container">
     <div class="grid">
       <label for="" class="day">D A Y</label>
-      <input type="number" min="1900" max="2099" step="1" class="iday" placeholder="DD">
+      <input type="number" min="1" max="31" step="1" class="iday" placeholder="DD">
+      <label class="day-error"></label>
+      <label class="month-error"></label>
+      <label class="year-error"></label>
       <label for="" class="month">M O N T H</label>
-      <input type="number" class="imonth" placeholder="MM">
+      <input type="number" class="imonth" placeholder="MM" min="1" max="12" step="1">
       <label for="" class="year">Y E A R</label>
       <input type="number" class="iyear" placeholder="YYYY">
       <div class="arrow">
@@ -37,5 +40,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Raed Alnan</a>.
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
